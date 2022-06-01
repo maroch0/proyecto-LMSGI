@@ -1,0 +1,79 @@
+@font-face {
+	font-family: Quicksand;
+	src: url("fonts/Quicksand-VariableFont_wght.ttf");
+}
+* {
+	font-family: Quicksand;
+}
+body {
+	display: flex; /* convertimos todas las cajas que contiene el body en flexbox */
+  	min-height: 100vh; /* Indicamos que ocupe el 100% del Viewport */
+  	flex-direction: column; /* Y que el contenido se organice en columnas */
+}
+header {
+	width: 100%;
+	display: flex;
+	flex-wrap: wrap;
+	margin-top: 15px;
+}
+#container-logo {
+	width: 49%
+}
+header img {
+	width: 40px; /* Para evitar que al redimensionar la ventana se haga demasiado pequeño */
+	margin-top: 13px;
+	margin-left: 30px;
+}
+nav {
+	width: 49%;
+}
+ul {
+	width: 95%;
+	display: inline-flex;
+	justify-content: flex-end; /* coloca los elementos flexbox al final de la caja flex */
+}
+li {
+	list-style: none; /* quita los puntos a la lista */
+	margin-right: 30px;
+	font-size: 1.2em;
+}
+a {
+	text-decoration: none;
+	color: #3A3A3A;
+}
+a:hover, a.active {
+	color: #33C6A1;
+}
+footer {
+	width: 100%;
+	display: flex;
+   	flex-shrink: 0;
+   	background-color: #F4F4F4;
+}
+#container-icons {
+	width: 50%;
+	margin-top: 15px;
+	margin-left: 30px;
+}
+footer a {
+	margin-right: 15px;
+}
+footer a img {
+	max-width: 2.5%;
+	min-width: 20px; /* Para evitar que al redimensionar la ventana se haga demasiado pequeño */
+}
+footer p {
+	width: 50%;
+	text-align: right;
+	margin-right: 30px;
+	color: #7A7A7A;
+}
+
+
+
+
+
+
+
+
+

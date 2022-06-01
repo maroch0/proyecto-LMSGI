@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="keywords"
+      content="frontend, backend, desarrollador, php, javascript"
+    />
+    <meta name="description" content="Web developer freelance" />
+    <meta name="author" content="Maria Romaguera" />
+    <link rel="stylesheet" href="normalize.css" />
+    <script src="modernizr-custom.js"></script>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="form.css" />
+    <link
+      rel="icon"
+      href="http://drive.google.com/uc?export=view&id=1goFGXSriRU7dJIVsFpY3MJXWGhJiSUqj"
+      type="image/png"
+    />
+    <title>Mar&iacute;a Romaguera</title>
+  </head>
+  <body>
+    <header>
+      <div id="container-logo">
+        <img
+          src="http://drive.google.com/uc?export=view&id=1goFGXSriRU7dJIVsFpY3MJXWGhJiSUqj"
+          alt="logo maria romaguera"
+        />
+      </div>
+      <nav>
+        <ul>
+          <li><a href="index.html">Inicio</a></li>
+          <li><a href="curriculum.html">Curriculum</a></li>
+          <li><a href="blog.html">Blog</a></li>
+          <li><a href="form.html" class="active">Contacto</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <section>
+      <h3>
+        <span id="contact">Contacta</span>
+        <span id="me">conmigo</span>
+      </h3>
+
+      <div id="container-form">
+        <form method="post" action="contacto.php">
+          <label>Nombre</label>
+          <input type="text" name="nombre" required />
+
+          <label>Email</label>
+          <input
+            type="email"
+            name="correo electronico"
+            pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"
+            required
+          />
+
+          <label>Mensaje</label>
+          <textarea name="message" rows="4" required></textarea>
+
+          <input id="boton-form" type="submit" name="enviar" value="Enviar" />
+        </form>
+
+        <div id="contact-info">
+          <p id="box-title">More info</p>
+          <p id="list-info">
+            <span
+              ><img
+                src="multimedia/location.png"
+                alt="icono location"
+              />Valencia</span
+            >
+            <span
+              ><img src="multimedia/phone.png" alt="icono telefono" />666 666
+              666</span
+            >
+            <span
+              ><img
+                src="multimedia/mail.png"
+                alt="icono email"
+              />mr.romaguera.ch@gmail.com</span
+            >
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <div id="container-icons">
+        <a href="https://www.linkedin.com/in/maria-romaguera/" target="_blank"
+          ><img src="multimedia/icon-linkedin.png" alt="icono linkedin"
+        /></a>
+        <a href="https://github.com/maroch0" target="_blank"
+          ><img src="multimedia/icon-github.png" alt="icono github"
+        /></a>
+        <a href="https://hub.docker.com/u/macarocha" target="_blank"
+          ><img src="multimedia/icon-dockerhub.png" alt="icono dockerhub"
+        /></a>
+      </div>
+
+      <p>&copy; 2021 Mar&iacute;a Romaguera</p>
+    </footer>
+  </body>
+</html>

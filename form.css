@@ -1,0 +1,94 @@
+@font-face {
+  font-family: Quicksand;
+  src: url("fonts/Quicksand-VariableFont_wght.ttf");
+}
+* {
+  font-family: Quicksand;
+}
+/* Página Form */
+section {
+  display: flex;
+  flex-direction: column;
+  flex: 1; /* Indica que la caja del section va ha ocupar más espacio que el header y la cabecera */
+}
+h3 {
+  display: flex; /* convierte los elementos hijo en flexbox */
+  flex-direction: column; /* Indica a los elementos hijo como deben organizarse */
+  text-align: right;
+}
+#contact {
+  font-size: 3em;
+  margin-right: 25%;
+  color: #3a3a3a;
+}
+#me {
+  font-size: 2em;
+  margin-right: 20%;
+  color: #33c6a1;
+}
+#container-form {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  max-width: 45%;
+  min-width: 400px; /* Para evitar que al redimensionar la ventana se haga demasiado pequeño */
+  margin-left: 25%;
+  padding: 2%;
+  background-color: #f4f4f4;
+}
+form {
+  width: 55%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+form input,
+form textarea {
+  resize: none;
+  margin: 5%;
+  border: none;
+  background: none;
+  outline: 0;
+  border-bottom: 1px solid #33c6a1;
+}
+#boton-form {
+  max-width: 20%;
+  min-width: 70px; /* Para evitar que al redimensionar la ventana se haga demasiado pequeño */
+  align-self: flex-end;
+  padding: 2.5%;
+  background: #33c6a1;
+  border: 0;
+  color: #fff;
+  border-radius: 5px;
+  font-size: 1.2em;
+}
+#contact-info {
+  width: 45%;
+  display: flex;
+  flex-flow: column wrap;
+  text-align: center;
+  background-image: url("http://drive.google.com/uc?export=view&id=1qidtUXkSKoSODk5Bp65HvENoOn_L_9yJ");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+}
+#box-title {
+  font-weight: bold;
+  font-size: 1.5em;
+  color: #3a3a3a;
+}
+#list-info {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  font-size: 1.1em;
+  padding: 0;
+}
+#list-info span {
+  width: 100%;
+  margin-top: 7px;
+}
+span img {
+  width: 5%;
+}
